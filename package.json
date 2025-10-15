@@ -1,0 +1,13 @@
+{
+  "name": "blood-bank-management-system",
+  "private": true,
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "dev": "npx concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend start\"",
+    "build": "npm --prefix frontend run build",
+    "start": "NODE_ENV=production node backend/server.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
